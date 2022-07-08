@@ -67,9 +67,9 @@ function draw() {
     if (redBubbleGroup.collide(backBoard)) {
       handleGameover(redBubbleGroup);
     }
-    if(blueBubbleGroup.(bulletGroup)){
-      handleBubbleCollision(blueBubbleGroup);
-    }
+    // if(blueBubbleGroup.(bulletGroup)){
+    //  handleBubbleCollision(blueBubbleGroup);
+    // }
 
     /*if(blueBubbleGroup.collide(bulletGroup)){
       handleBubbleCollision();
@@ -79,9 +79,9 @@ function draw() {
       handleBubbleCollision(blueBubbleGroup);
     }*/
     
-    /*if(blueBubbleGroup.collide(bulletGroup)){
+    if(blueBubbleGroup.collide(bulletGroup)){
       handleBubbleCollision(blueBubbleGroup);
-    }*/
+    }
 
     if(redBubbleGroup.collide(bulletGroup)){
       handleBubbleCollision(redBubbleGroup);
@@ -131,11 +131,11 @@ function handleBubbleCollision(bubbleGroup){
 
 function handleGameover(bubbleGroup){
   
-    /*life=life-1;
-    bubbleGroup.destroyEach();*/
-
-     life=life+1;
+    life=life-1;
     bubbleGroup.destroyEach();
+
+    // life=life+1;
+    // bubbleGroup.destroyEach();
 
      /*life=life-1;
     bubbleGroup.destroy();*/
